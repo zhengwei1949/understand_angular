@@ -14,19 +14,19 @@
   <script src="./libs/angular.js"></script>
   <script src="./libs/angular-route.js"></script>
   <script>
-    var myApp1 = angular.module('myApp1',['ngRoute']);
+    var myApp1 = angular.module('myApp1',[]);
     myApp1.controller('findController',['$scope',function($scope){
         $scope.info = '这是发现音乐';
     }]);
 
-    var myApp2 = angular.module('myApp2',['ngRoute']);
-    myApp2.controller('findController',['$scope',function($scope){
-        $scope.info = '这是发现音乐';
+    var myApp2 = angular.module('myApp2',[]);
+    myApp2.controller('mineController',['$scope',function($scope){
+        $scope.info = '我的音乐';
     }]);
 
-    var myApp3 = angular.module('myApp3',['ngRoute']);
-    myApp3.controller('findController',['$scope',function($scope){
-        $scope.info = '这是发现音乐';
+    var myApp3 = angular.module('myApp3',[]);
+    myApp3.controller('friendController',['$scope',function($scope){
+        $scope.info = '这是我的朋友音乐';
     }]);
 
 

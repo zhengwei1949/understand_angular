@@ -21,7 +21,10 @@
             $scope.add = function(){
                 $scope.arr.push($scope.a);
             };
-
+            //如何监视arr的变化?
+            $scope.$watch('arr',function(){
+                console.log(111);
+            },true)
         }]);
     </script>
 </body>
